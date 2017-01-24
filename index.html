@@ -8,10 +8,9 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/main.css" />
 	</head>
-	<body style="padding-top: 10px;">
+	<body ng-app="BlogApp">
 
 		<div class="container">
-			<!-- <navigationbar></navigationbar> -->
 			<div class="navbar navbar-default">
 				<a class="navbar-brand logo" href="#/">Me da um preco</a>
 				<ul class="nav navbar-nav">
@@ -19,7 +18,7 @@
 				</ul>
 			</div>
 
-			<div class="container">
+			<div ng-controller="LeadCtrl" class="container">
 			  <form role="form" class="formContainer">
 			    <h4>RECEBA NOSSO CONTEUDO</h4>
 			        <div>
@@ -30,7 +29,7 @@
 			          <label class="label" for="email"></label>
 			          <input put placeholder="EMAIL" class="" ng-model="form.email" type="text" id="email">
 			        </div>
-			        <input class="" type="button" value="ASSINE" ng-click="addLead()"></input>
+			        <input class="" type="button" value="ASSINE" ng-click="addLead(form)"></input>
 			  </form>
 			</div>
 
@@ -63,5 +62,17 @@
 		<script src="app/app.js"></script>
 		<script src="app/controllers.js"></script>
 		<script src="app/directives.js"></script>
+		<script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+		<script>
+			var config = {
+				apiKey: "AIzaSyC_tQb9GwxNLRDA-68m9s50KNbeQN-b7oc",
+				authDomain: "medaumpreco.firebaseapp.com",
+				databaseURL: "https://medaumpreco.firebaseio.com",
+				storageBucket: "medaumpreco.appspot.com",
+				messagingSenderId: "1011415438016"
+			};
+			firebase.initializeApp(config);
+		</script>
 	</body>
 </html>

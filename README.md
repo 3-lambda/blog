@@ -1,19 +1,17 @@
-#Blog
+#ME DA UM PRECO
 
-###Como instalar
-`pip install -r requirements.txt`
-ou veja o [gist com o passo a passo no ubuntu/windows](https://gist.github.com/anabastos/b98af2fd2cc881d14349faff7f4ec100)
-###Como rodar:
-Em dois terminais diferentes rode
-`mongod`
+###Como rodar um web server local
+Pode ser a partir de um WAMP/XXAMPP
+pelo Simple HTTP Server do Python
+`python -m SimpleHTTPServer 8000`
+ou php 5 built-in web server
+`php -S localhost:8000`
 
-`python app.py`
+Entrar no [localhost:8000](http://localhost:5000)
 
-Entrar no [localhost:5000](http://localhost:5000)
+###Entrar no [github pages](https://3-lambda.github.io/blog/#/)
 
-Entrar no [localhost:5000/leads](http://localhost:5000/leads) para ver o numero de leads
-
-Entrar no [localhost:5000/editor](http://localhost:5000/editor) para ver o numero de leads
+###Entrar no [medaumpreco.com.br](http://medaumpreco.com.br/#/)
 
 ####Nosso trello!
 https://trello.com/b/COIRV4d4/lambda-3-gama
