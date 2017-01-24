@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+	<head>
+		<meta charset="UTF-8">
+		<title>Gama Blog</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+	</head>
+	<body style="padding-top: 10px;">
+
+		<div class="container">
+			<!-- <navigationbar></navigationbar> -->
+			<div class="navbar navbar-default">
+				<a class="navbar-brand" href="#/">Me da um preco</a>
+				<ul class="nav navbar-nav">
+					<li ng-repeat="page in pages"><a href="#/page/{{ pages.indexOf(page) }}">{{ page.title }}</a></li>
+				</ul>
+			</div>
+
+			<div class="container">
+			  <form role="form" class="formContainer">
+			    <h4>RECEBA NOSSO CONTEUDO</h4>
+			        <div>
+			          <label class="label" for="nome"></label>
+			          <input placeholder="NOME COMPLETO" ng-model="form.nome" type="text" id="nome">
+			        </div>
+			        <div>
+			          <label class="label" for="email"></label>
+			          <input put placeholder="EMAIL" class="" ng-model="form.email" type="text" id="email">
+			        </div>
+			        <input class="" type="button" value="ASSINE" ng-click="addLead()"></input>
+			  </form>
+			</div>
+
+
+			 <div class="container">
+				<h4>RECEBA NOSSOS DOWNLOADS</h4>
+				<button type="button" class="btn btn-default btn-lg">
+				  <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+				</button>
+				<button type="button" class="btn btn-default btn-lg">
+					<span class="glyphicon glyphicon-object-align-vertical" aria-hidden="true"></span>
+				</button>
+				<button type="button" class="btn btn-default btn-lg">
+					<span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span>
+				</button>
+				<button type="button" class="btn btn-default btn-lg">
+					<span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>
+				</button>
+				<button type="button" class="btn btn-default btn-lg">
+					<span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+				</button>
+			</div>
+			<div ng-view></div>
+		</div>
+
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/angular.js"></script>
+		<script src="js/angular-route.js"></script>
+		<script src="app/app.js"></script>
+		<script src="app/controllers.js"></script>
+		<script src="app/directives.js"></script>
+	</body>
+</html>
