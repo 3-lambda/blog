@@ -1,2 +1,4 @@
-@import url('fonts.css');
+/* Importação de todos os CSS */
 @import url('normalize.css');
+@import url('fonts.css');
+@import url('header.css');

@@ -1,0 +1,13 @@
+/* Código CSS do cabeçalho do blog */
+.logo {
+	text-indent: -9999px;
+	height: 90px;
+	width: 90px;
+	background-image: url('img/logo.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 60px;
+	background-color: #ffffff;
+    float: left;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
