@@ -4,9 +4,18 @@
 @import url('header.css');
 @import url('index.css');
 
-body {
-	background-color: #FFF;
-} 
+/* Setup básico de todo o site */
+html, body {
+  background: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #898989;
+  border-color: #c9c9c9;
+/*  text-rendering: optimizeLegibility;
+  overflow-x: hidden;*/
+}
+
 
 h1, h2, h3, h4 {
 	font-size: 20px;
