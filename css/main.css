@@ -9,16 +9,15 @@ html, body {
   background: #fff;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  color: #898989;
-  border-color: #c9c9c9;
-/*  text-rendering: optimizeLegibility;
-  overflow-x: hidden;*/
+  font-size: 20px;
+  color: #a4c6df;
 }
 
 
 h1, h2, h3, h4 {
-	font-size: 20px;
-	color: #a4c6df;
+	font-size: 30px;
+	color: #008ec0;
 	text-align: center;
+	font-weight: 600;
 }
+

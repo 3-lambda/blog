@@ -27,3 +27,87 @@ span.banner-legend {
     /* bottom: 100px; */
     top: 40%;
 }
+
+/* Formulário */
+
+.form-group {
+    margin: 25px 0;
+}
+
+input[type=text]{     
+	padding: 30px 20px;
+    font-size: 20px;
+    border-radius:12px;
+    -moz-border-radius:12px;
+    -webkit-border-radius:12px;
+	background: #FFF;
+	::-webkit-input-placeholder  { color: rgb(118, 112, 179); }
+	input:-moz-placeholder { color:rgb(118, 112, 179); }
+	textarea:-moz-placeholder { color:rgb(118, 112, 179); }​
+}
+
+.btn-download:hover, .btn-download:active, input[type=submit]:hover, input[type=submit]:active {
+    background-color: #008ec0;
+    border-radius:12px;
+    -moz-border-radius:12px;
+    -webkit-border-radius:12px;
+}
+.btn-download {
+	color: #FFF;
+	font-weight: 800;
+	padding: 30px 20px;
+	font-size: 20px;
+	border-radius:12px;
+	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+	background-color: #a4c6df;	
+}
+
+
+/* Icones da sessão Download */ 
+
+.icons-lockup {
+	max-width: 700px;
+	display: flex;
+}
+
+.icons {
+	size: 100px;
+}
+
+
+/* Postagens estilo 1 com image, esquerda */ 
+
+section.container.post-img-left {
+    padding: 0;
+    margin: 0;
+    height: 305px;
+}
+section.container.post-img-left > div.row {
+    padding: 0;
+    margin: 0;
+}
+
+div.post-img-left {
+	background-color: #008ec0;
+	padding: 20px 40px;
+	height: 305px;
+}
+
+img.post-img-left {
+    width: 100%;
+}
+h2.post-img-left {
+	font-size: 45px;
+	color: #FFF;
+	font-weight: 800;
+}
+h2.post-img-left:after { /* anulando estilo que o normalize.css coloca */
+	height: 0;
+	margin-top: 0;
+}
+p.post-img-left {
+	font-size: 25px;
+	color: #FFF;
+	font-weight: 800;
+}

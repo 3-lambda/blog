@@ -20,6 +20,7 @@
 					<!--<ul class="nav navbar-nav">
 						<li ng-repeat="page in pages"><a href="#/page/{{ pages.indexOf(page) }}">{{ page.title }}</a></li>
 					</ul>-->
+					<!--
 					<form class="form-inline">
 					  <div class="form-group">
 						<label for="loginfield">Login</label>
@@ -31,6 +32,8 @@
 					  </div>
 					  <button type="submit" class="btn btn-primary">Entrar</button>
 					</form>
+					-->
+					
 					<nav class="site-nav">
 						<ul>
 							<li ng-repeat="page in pages"><a href="#/page/{{ pages.indexOf(page) }}">{{ page.title }}</a></li>
@@ -44,14 +47,13 @@
 					
 				</div>
 				
-
 			</header>
 			
 
 			<div ng-controller="LeadCtrl" class="container">
 				<div class="row">
 					<div class="banner-static col-md-12 clearfix">
-					  <img src="img/banner-mercado.png">
+					  <img src="img/banner-mercado.png" />
 					  <span class="banner-legend">
 					   Tenha sempre conteúdo com o nosso blog
 					  </span>
@@ -60,40 +62,87 @@
 			</div>
 
 			<section class="container">
-			  <form role="form" class="formContainer">
-			    <h4>RECEBA NOSSO CONTEUDO</h4>
+			  <form role="form" class="formContainer  col-md-8 col-md-offset-2">
+			    <h4>Assine e receba antes nossos conteúdos</h4>
 			        <div class="form-group">
 			          <label class="label" for="nome"></label>
 			          <input placeholder="NOME" ng-model="form.nome" type="text" id="nome" class="form-control">
 			        </div>
 			        <div class="form-group">
 			          <label class="label" for="email"></label>
-			          <input put placeholder="EMAIL" class="" ng-model="form.email" type="text" id="email" class="form-control">
-			        </div>
-			        <input class="btn btn-success" type="button" value="ASSINE" ng-click="addLead(form)"></input>
-					
+			          <input put placeholder="EMAIL" class="form-control" ng-model="form.email" type="text" id="email">
+			        </div>				
+			        <input class="form-control btn btn-lg btn-download" type="button" value="ASSINE" ng-click="addLead(form)">
 			  </form>
 			</section>
 
 			 <div class="container">
-				<h4>RECEBA NOSSOS DOWNLOADS</h4>
-				<button type="button" class="btn btn-default btn-lg">
-				  <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
-				</button>
-				<button type="button" class="btn btn-default btn-lg">
-					<span class="glyphicon glyphicon-object-align-vertical" aria-hidden="true"></span>
-				</button>
-				<button type="button" class="btn btn-default btn-lg">
-					<span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span>
-				</button>
-				<button type="button" class="btn btn-default btn-lg">
-					<span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>
-				</button>
-				<button type="button" class="btn btn-default btn-lg">
-					<span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
-				</button>
+				<h4>Veja nossos conteúdos</h4>
+				<div class="row">
+					<div class="icons-lockup col-md-10 col-md-offset-1">
+						<div class="icons icon-book">
+						  <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+						</div>
+						<div class="icons icon-info">
+							<span class="glyphicon glyphicon-object-align-vertical" aria-hidden="true"></span>
+						</div>
+						<div class="icons icon-oque-fazemos">
+							<span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span>
+						</div>
+						<div class="icons icon-whitepaper">
+							<span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>
+						</div>
+						<div class="icons icon-webnars">
+							<span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div ng-view></div>
+
+			<!-- <div ng-view></div> -->
+			<section class="container post-img-left">
+				<div class="row">
+					<div class="col-md-6">
+						<img class="post-img-left" src="img/erro-404.png" />	
+					</div>
+					<div class="col-md-6 post-img-left">
+						<h2 class="post-img-left">A Cool Headline</h2>
+						<p class="post-img-left"> Aqui vai o parágrafo com o texto do marketing, que já iremos atualizar. Aqui vai o parágrafo com o texto do marketing, que já iremos atualizar </p>	
+					</div>
+				</div>
+			</section>
+
+			<section class="container post-img-left">
+				<div class="row">
+					<div class="col-md-6">
+						<img class="post-img-left" src="img/erro-404.png" />	
+					</div>
+					<div class="col-md-6 post-img-left">
+						<h2 class="post-img-left">A Cool Headline</h2>
+						<p class="post-img-left"> Aqui vai o parágrafo com o texto do marketing, que já iremos atualizar. Aqui vai o parágrafo com o texto do marketing, que já iremos atualizar </p>	
+					</div>
+				</div>
+			</section>
+
+			<section class="container">
+			  <form role="form" class="formContainer">
+			    <h4>Assine e receba nossos conteúdos</h4>
+			        <div class="form-group">
+			          <label class="label" for="nome"></label>
+			          <input placeholder="NOME COMPLETO" ng-model="form.nome" type="text" id="nome" class="form-control">
+			        </div>
+			        <div class="form-group">
+			          <label class="label" for="email"></label>
+			          <input put placeholder="EMAIL" class="" ng-model="form.email" type="text" id="email" class="form-control">
+			        </div>
+			        <input class="" type="button" value="ASSINE" ng-click="addLead(form)">
+			  </form>
+			</section>
+
+
+			<!-- RODAPÉ-->
+
+
 		</div>
 
 		<script src="js/jquery.js"></script>
