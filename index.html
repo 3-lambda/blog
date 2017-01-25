@@ -21,17 +21,27 @@
 						<li ng-repeat="page in pages"><a href="#/page/{{ pages.indexOf(page) }}">{{ page.title }}</a></li>
 					</ul>-->
 					<form class="form-inline">
-						<nav class="site-nav">
-							<ul>
-								<li ng-repeat="page in pages"><a href="#/page/{{ pages.indexOf(page) }}">{{ page.title }}</a></li>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="#">Atacado</a></li>
-								<li><a href="#">Varejo</a></li>
-								<li><a href="#">Quem somos</a></li>
-								<li><a href="#">Contato</a></li>
-							</ul>
-						</nav>
+					  <div class="form-group">
+						<label for="loginfield">Login</label>
+						<input type="text" class="form-control" id="loginfield" placeholder="email">
+					  </div>
+					  <div class="form-group">
+						<label for="passwordfield">Email</label>
+						<input type="password" class="form-control" id="passwordfield" placeholder="email@example.com.br">
+					  </div>
+					  <button type="submit" class="btn btn-primary">Entrar</button>
 					</form>
+					<nav class="site-nav">
+						<ul>
+							<li ng-repeat="page in pages"><a href="#/page/{{ pages.indexOf(page) }}">{{ page.title }}</a></li>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#">Atacado</a></li>
+							<li><a href="#">Varejo</a></li>
+							<li><a href="#">Quem somos</a></li>
+							<li><a href="#">Contato</a></li>
+						</ul>
+					</nav>
+					
 				</div>
 				
 
