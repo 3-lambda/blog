@@ -11,7 +11,7 @@ header {
     text-indent: -9999px;
     height: 90px;
     width: 250px;
-    background-image: url(../img/logo.png);
+    background-image: url('../img/logo.png');
     background-repeat: no-repeat;
     background-position: left;
     background-color: #FFF;
