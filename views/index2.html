@@ -4,22 +4,14 @@
 		<meta charset="UTF-8">
 		<title>Gama Blog</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/bootstrap.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/main.css" />
 	</head>
 	<body ng-app="BlogApp">
-
-		<div class="container">
-
+ 		<div class="home-wrap">
 
 			<header>
-
-				<div class="navbar navbar-default">
-					<a class="navbar-brand logo">Me da um preco</a>
-					<!--<ul class="nav navbar-nav">
-						<li ng-repeat="page in pages"><a href="#/page/{{ pages.indexOf(page) }}">{{ page.title }}</a></li>
-					</ul>-->
+				<div class="logo"><a href="#">Me da um preco</a></div>
+					
 					<nav class="site-nav">
 						<ul>
 							<li ng-repeat="page in pages"><a href="#/page/{{ pages.indexOf(page) }}">{{ page.title }}</a></li>
@@ -30,22 +22,20 @@
 							<li><a href="#">Contato</a></li>
 						</ul>
 					</nav>
-				</div>
-				
-
+					
 			</header>
 
-			<div ng-controller="LeadCtrl" class="">
-			<div class="">
-				<div class="row">
-					<div class="banner-static col-md-12 clearfix">
-					  <img src="img/banner-mercado.png">
-					  <span class="banner-legend">
-					   Tenha sempre conteúdo com o nosso blog
-					  </span>
-					</div>
+					
+			<section>
+				<div class="banner-static">
+				  <img src="img/banner-mercado.png">
+				  <span class="banner-legend">
+				   Tenha sempre conteúdo com o nosso blog
+				  </span>
 				</div>
-			</div>
+			</section>
+				
+		</div><!-- home-wrap -->
 
 			<div class="container">
 			  <form role="form" class="formContainer">
@@ -82,6 +72,8 @@
 			</div>
 			<div ng-view></div>
 		</div>
+		</div>
+
 
 		<script src="js/jquery.js"></script>
 		<script src="js/bootstrap.js"></script>

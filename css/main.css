@@ -2,3 +2,14 @@
 @import url('normalize.css');
 @import url('fonts.css');
 @import url('header.css');
+@import url('index.css');
+
+body {
+	background-color: #FFF;
+} 
+
+h1, h2, h3, h4 {
+	font-size: 20px;
+	color: #a4c6df;
+	text-align: center;
+}

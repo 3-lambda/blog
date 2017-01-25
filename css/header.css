@@ -1,13 +1,54 @@
 /* Código CSS do cabeçalho do blog */
-.logo {
-	text-indent: -9999px;
-	height: 90px;
-	width: 90px;
-	background-image: url('img/logo.png');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 60px;
-	background-color: #ffffff;
-    float: left;
-	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+header {
+	height: 100px;
+	max-width: 960px;
+	background-color: red;	
+	position: relative; /*para ajustar a posição do elemento button*/
+	margin:	0 auto;
 }
+
+
+.logo {
+    text-indent: -9999px;
+    height: 90px;
+    width: 250px;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: #ffffff;
+    background-size: 100%;
+    float: left;
+}
+
+
+/* menu */
+
+.site-nav {
+	float: left;
+}
+nav.site-nav > ul {
+	list-style: none;
+    margin: 10px 0;
+}
+
+
+nav.site-nav > ul > li {
+	display: inline;
+	padding: 0px 10px;
+	list-style: none;
+}
+
+nav.site-nav > ul > li > a {
+	font-weight: 400;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.site-nav a:hover {
+	font-weight: 800;
+	color:red;
+} 
+.site-nav a:active {
+	font-weight: 800;
+} 
+

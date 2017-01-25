@@ -1,0 +1,21 @@
+/* -------- Banner Estático -------- */
+
+.banner-static {
+	margin: 0;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.banner-static img {
+	width: 100%;
+}
+
+.banner-legend {
+	font-weight: 600;
+	font-size: 40px;
+	color: #FFFFFF;
+	background-color: red;
+	text-align: center;
+	float: right;
+	z-index: 9999;
+}
