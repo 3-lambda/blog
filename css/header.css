@@ -1,10 +1,9 @@
 /* Código CSS do cabeçalho do blog */
 header {
 	height: 100px;
-	max-width: 960px;
-	background-color: red;	
 	position: relative; /*para ajustar a posição do elemento button*/
 	margin:	0 auto;
+	background-color: #FFF;
 }
 
 
@@ -15,7 +14,7 @@ header {
     background-image: url(../img/logo.png);
     background-repeat: no-repeat;
     background-position: left;
-    background-color: #ffffff;
+    background-color: #FFF;
     background-size: 100%;
     float: left;
 }
