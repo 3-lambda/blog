@@ -3,9 +3,8 @@ angular.module('app.controllers', [
 	'firebase'
 ])
 	.controller('PostController', ['$scope', '$http', "$firebaseObject", function($scope, $http){
-		$http.get('data/posts.json').success(function(data){
+		$http.get('posts/frontpage.json').success(function(data){
 			$scope.posts = data;
-
 		});
 	}])
 	.controller('LeadCtrl',
@@ -15,30 +14,34 @@ angular.module('app.controllers', [
 			    return re.test(email);
 			}
 			$scope.addLead = function(form){
-				if (validateEmail(form.email)){
+
+				var ref = firebase.database().ref('leads')
+
+				ref.orderByChild('email').equalTo(form.email).once("child_added")
+					.then(function(snapshot) {
+						console.log(snapshot)
+						})
+
+				if (validateEmail(form.email) && false){
 					var d = new Date();
 					form.data = d.toLocaleString();
 					var request = new XMLHttpRequest();
 					request.open('GET', '//api.ipify.org?format=jsonp&callback=?', true);
 					request.onload = function() {
-					  if (request.status >= 200 && request.status < 400) {
-					    form.ip = request.responseText.slice(9,-4);
-
-							var ref = firebase.database().ref();
+						if (request.status >= 200 && request.status < 400) {
+							form.ip = request.responseText.slice(9,-4);
 							ref.push(form);
-					  }
+							console.log(form)
+						}
 					};
 					request.onerror = function() {
 					};
 					request.send();
 				}
-
-				console.log(form)
-
 			}
 	})
 	.controller('SinglePostController', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams){
-		$http.get('data/posts.json').success(function(data){
-			$scope.post = data[$routeParams.id];
+		$http.get('posts/frontpage.json').success(function(data){
+		  $scope.template = '../posts/templates/post' + $routeParams.id + '.html'
 		});
 	}]);

@@ -69,7 +69,7 @@ input[type=text]{
 
 .icons-lockup {
     height: 100px;
- 	margin: 20px auto;  
+ 	margin: 20px auto;
     max-width: 700px;
     display: flex;
     align-items: center;
@@ -165,7 +165,7 @@ p.post-img-left {
 	font-weight: 800;
 }
 
-/* Posts vertial inteiro na pagina */ 
+/* Posts vertial inteiro na pagina */
 article.post-vertical {
 	background-color: #FFF;
 }
