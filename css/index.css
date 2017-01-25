@@ -102,14 +102,23 @@ h2.post-img-left {
 	color: #FFF;
 	font-weight: 800;
 }
-h2.post-img-left:after { /* anulando estilo que o normalize.css coloca */
-	height: 0;
-	margin-top: 0;
-}
+
 p.post-img-left {
 	font-size: 25px;
 	color: #FFF;
 	font-weight: 800;
+}
+
+/* Posts vertial inteiro na pagina */ 
+article.post-vertical {
+	background-color: #FFF;
+}
+article.post-vertical > h2, article.post-vertical > h3, article.post-vertical > h4, article.post-vertical > h5 {
+	color: #a4c6df;
+}
+article.post-vertical > img {
+	float: left;
+	margin:	0 25px 10px 0;
 }
 
 
