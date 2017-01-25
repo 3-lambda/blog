@@ -12,30 +12,31 @@
 
 		<div class="container">
 
-
+			
 			<header>
-
+				
 				<div class="navbar navbar-default">
 					<a class="navbar-brand logo">Me da um preco</a>
 					<!--<ul class="nav navbar-nav">
 						<li ng-repeat="page in pages"><a href="#/page/{{ pages.indexOf(page) }}">{{ page.title }}</a></li>
 					</ul>-->
-					
-					<nav class="site-nav">
-						<ul>
-							<li ng-repeat="page in pages"><a href="#/page/{{ pages.indexOf(page) }}">{{ page.title }}</a></li>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="#">Atacado</a></li>
-							<li><a href="#">Varejo</a></li>
-							<li><a href="#">Quem somos</a></li>
-							<li><a href="#">Contato</a></li>
-						</ul>
-					</nav>
-
+					<form class="form-inline">
+						<nav class="site-nav">
+							<ul>
+								<li ng-repeat="page in pages"><a href="#/page/{{ pages.indexOf(page) }}">{{ page.title }}</a></li>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="#">Atacado</a></li>
+								<li><a href="#">Varejo</a></li>
+								<li><a href="#">Quem somos</a></li>
+								<li><a href="#">Contato</a></li>
+							</ul>
+						</nav>
+					</form>
 				</div>
 				
 
 			</header>
+			
 
 			<div ng-controller="LeadCtrl" class="container">
 				<div class="row">
@@ -53,7 +54,7 @@
 			    <h4>RECEBA NOSSO CONTEUDO</h4>
 			        <div class="form-group">
 			          <label class="label" for="nome"></label>
-			          <input placeholder="NOME COMPLETO" ng-model="form.nome" type="text" id="nome" class="form-control">
+			          <input placeholder="NOME" ng-model="form.nome" type="text" id="nome" class="form-control">
 			        </div>
 			        <div class="form-group">
 			          <label class="label" for="email"></label>
