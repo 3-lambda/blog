@@ -3,6 +3,7 @@
 @import url('fonts.css');
 @import url('header.css');
 @import url('index.css');
+@import url('landing-page.css');
 
 /* Setup básico de todo o site */
 html, body {

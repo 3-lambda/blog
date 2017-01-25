@@ -9,8 +9,7 @@ header {
 
 .logo {
     text-indent: -9999px;
-    height: 90px;
-    width: 250px;
+    width: 200px;
     background-image: url('../img/logo.png');
     background-repeat: no-repeat;
     background-position: left;
@@ -33,7 +32,7 @@ nav.site-nav > ul {
 
 nav.site-nav > ul > li {
 	display: inline;
-	padding: 0px 14px;
+	padding: 0px 10px;
 	list-style: none;
 }
 
