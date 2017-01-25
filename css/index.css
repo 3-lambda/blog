@@ -34,7 +34,7 @@ span.banner-legend {
     margin: 25px 0;
 }
 
-input[type=text]{     
+input[type=text]{
 	padding: 30px 20px;
     font-size: 20px;
     border-radius:12px;
@@ -60,11 +60,11 @@ input[type=text]{
 	border-radius:12px;
 	-moz-border-radius:12px;
 	-webkit-border-radius:12px;
-	background-color: #a4c6df;	
+	background-color: #a4c6df;
 }
 
 
-/* Icones da sessão Download */ 
+/* Icones da sessão Download */
 
 .icons-lockup {
 	max-width: 700px;
@@ -76,7 +76,7 @@ input[type=text]{
 }
 
 
-/* Postagens estilo 1 com image, esquerda */ 
+/* Postagens estilo 1 com image, esquerda */
 
 section.container.post-img-left {
     padding: 0;
@@ -113,3 +113,13 @@ p.post-img-left {
 }
 
 
+/* Rodapé */
+footer {
+	height: 100px;
+	background-color: #b5b5b5;
+}
+footer > p {
+	color: #FFF;
+	font-size: 15px;
+	text-align: center;
+}
