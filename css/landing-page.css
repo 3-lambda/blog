@@ -71,9 +71,6 @@
     margin-bottom: 20px;
 }
 
-/*------------------------------------------*/
-/*	  Register Form Input
-/*------------------------------------------*/
 
 .form_register .form-control {
 	height: 46px;
@@ -98,6 +95,8 @@ textarea {
 .form_register textarea {
 	min-height: 140px;
 }
+
+
 
 
 /* foooter */
