@@ -2,6 +2,22 @@
 	{
 		"title": "Como pesquisar preços da indústria, atacado e varejo",
 		"exerpt": "Como é o seu processo de pesquisa de preços? Está conseguindo descobrir corretamente o preço dos seus concorrentes? Seu negócio do Varejo é assertivo nos preços, seu atacado consegue descobrir os preços? E a sua indústria tem os preços dos concorrentes para uma melhor negociação? São muitas perguntas certo, mas elas têm uma razão específica.",
-		"img": "img/postagens/artigo-1/pesquisar-preco.png"
+		"img": "img/postagens/artigo-1/pesquisar-preco.png",
+		"img2": "img/postagens/artigo-1/formas-de-pesquisar.png",
+		"template": "post0.html"
+	},
+	{
+		"title": "Qual a importância do preço nas compras de varejo e indústria",
+		"exerpt": "Clientes são voláteis e mudam todo dia, toda hora e a cada compra, mas como conseguir mais clientes ou mesmo reter os mesmos clientes que são muito importantes e mais barato que adquirir novos clientes. Simplesmente aposte nos seus preços.",
+		"img": "img/postagens/artigo-2/Pesquisar-preco.png",
+		"img2": "img/postagens/artigo-2/Importancia-do-preco.png",
+		"template": "post1.html"
+	},
+	{
+		"title": "5 dicas para colocar o preço ideal no varejo",
+		"exerpt": "Todo varejista se faz essa pergunta, não é mesmo? poxa, como vou descobrir o preço que vou aplicar aos meus produtos e ainda conseguir uma margem de ganho aceitável. Pois nesse artigo que escrevemos para você, varejista, iremos lhe dar 7 ótimas dicas de como achar o preço ideal para o seu varejo.",
+		"img": "img/postagens/artigo-3/Preco-ideal.png",
+		"img2": "img/postagens/artigo-3/Resultado-preco-ideal.png",
+		"template": "post2.html"
 	}
 ]
