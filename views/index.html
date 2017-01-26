@@ -5,6 +5,7 @@
 		<title>Gama Blog</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="manifest" href="manifest.webmanifest">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/main.css" />
 	</head>
@@ -12,25 +13,20 @@
 
 			<header>
 				<div class="navbar navbar-default">
-					<a class="navbar-brand logo">Me da um preco</a>
-					<!--<ul class="nav navbar-nav">
-						<li ng-repeat="page in pages"><a href="#/page/{{ pages.indexOf(page) }}">{{ page.title }}</a></li>
-					</ul>-->
-
-					<nav class="site-nav">
-						<ul>
-							<li ng-repeat="page in pages"><a href="#/page/{{ pages.indexOf(page) }}">{{ page.title }}</a></li>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="#">Atacado</a></li>
-							<li><a href="#">Varejo</a></li>
-							<li><a href="#">Quem somos</a></li>
-							<li><a href="#">Contato</a></li>
-						</ul>
-					</nav>
-
+					<div class="site-nav container-fluid">
+			    <div class="navbar-header">
+			      <a class="navbar-brand logo">Me da um preco</a>
+			    </div>
+			    <ul class="nav navbar-nav">
+			      <li class="active"><a href="#">Home</a></li>
+						<!-- <li><a href="#">Atacado</a></li>
+						<li><a href="#">Varejo</a></li> -->
+						<li><a href="#/quem-somos">Quem somos</a></li>
+						<li><a href="#/contato">Contato</a></li>
+			    </ul>
+			  </div>
+							<!-- <li ng-repeat="page in pages"><a href="#/page/{{ pages.indexOf(page) }}">{{ page.title }}</a></li> -->
 				</div>
-
-
 			</header>
 
 
@@ -115,6 +111,7 @@
 		<script src="js/angular.js"></script>
 		<script src="js/angular-route.js"></script>
 		<script src="app/app.js"></script>
+		<script src="app/scripts.js"></script>
 		<script src="app/controllers.js"></script>
 		<script src="app/directives.js"></script>
 		<script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
