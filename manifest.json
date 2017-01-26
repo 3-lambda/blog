@@ -1,0 +1,19 @@
+{
+  "name": "Me da um preco",
+  "short_name": "Me da um preco",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0000ff",
+  "description": ".",
+  "icons": [{
+    "src": "img/Logo.png",
+    "sizes": "48x48",
+    "type": "image/png"
+  }],
+  "related_applications": [{
+    "platform": "web"
+  }, {
+    "platform": "play",
+    "url": "http://medaumpreco.com.br"
+  }]
+}
