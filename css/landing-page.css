@@ -134,7 +134,7 @@ footer {
  	background-color: rgb(0, 142, 193);
  }
  .ldpage-ebook-wrap ol {
- 	display: inline;
+ 	/*display: inline;*/
  }
  .img-description {
  	float: right;
