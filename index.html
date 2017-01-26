@@ -25,16 +25,13 @@
 					<div class="navbar-header">
 						<a class="navbar-brand logo">Me da um preco</a>
 					</div>
-					<div class="site-nav container-fluid">
-
-					<ul class="nav navbar-nav">
+					<ul class="nav navbar-nav site-nav">
 						<li class="active"><a href="#">Home</a></li>
 						<!-- <li><a href="#">Atacado</a></li>
 						<li><a href="#">Varejo</a></li> -->
 						<li><a href="#/quem-somos">Quem somos</a></li>
 						<li><a href="#/contato">Contato</a></li>
 					</ul>
-				</div>
 			</header>
 
 			<div class="container">
@@ -60,7 +57,7 @@
 			          <label class="label" for="email"></label>
 			          <input put placeholder="EMAIL" class="form-control" ng-model="form.email" type="text" id="email">
 			        </div>
-			        <input class="form-control btn btn-lg btn-download" type="button" value="ASSINE" ng-click="showDiv=true; addLead(form)">
+			        <input class="form-control btn btn-lg btn-download js-push-btn" type="button" value="ASSINE" ng-click="showDiv=true; addLead(form)">
 							<div ng-show="showDiv">
 							  Obrigado por assinar!
 								Em breve receberá ótimos conteúdos
@@ -132,6 +129,7 @@
 		<script src="js/angular.js"></script>
 		<script src="js/angular-route.js"></script>
 		<script src="app/app.js"></script>
+		<script src="app/scripts.js"></script>
 		<script src="app/controllers.js"></script>
 		<script src="app/directives.js"></script>
 		<script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
