@@ -41,8 +41,11 @@ span.banner-legend {
 .form-group {
     margin: 25px 0;
 }
-
-input[type=text]{
+/*
+input[type=text],
+input[type=email],
+select,
+textarea{
 	padding: 30px 20px;
     font-size: 20px;
     border-radius:12px;
@@ -52,7 +55,7 @@ input[type=text]{
 	::-webkit-input-placeholder  { color: rgb(118, 112, 179); }
 	input:-moz-placeholder { color:rgb(118, 112, 179); }
 	textarea:-moz-placeholder { color:rgb(118, 112, 179); }​
-}
+}*/
 
 .btn-download:hover, .btn-download:active, input[type=submit]:hover, input[type=submit]:active {
     background-color: #008ec0;

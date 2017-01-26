@@ -1,16 +1,27 @@
 
- .ldpage-wrap {
+/* ---------------------------- */
+/* SETUP BÁSICO DE LANDING PAGE */
+/* ---------------------------- */
+
+.ldpage-wrap {
  	background-image: url('../img/banner-mercado.png');
  	background-repeat: no-repeat;
  	background-size: cover;
  }
+
  /* Texto */
 
-#description-wrap h1 {
+.ldpage h1 {
 	font-size: 40px;
 	margin-bottom: 30px;
 	color: black;
 }
+.ldpage h2 {
+	font-size: 30px;
+	margin-bottom: 30px;
+	color: black;
+}
+
 
 .description {
 	margin-bottom: 20px;
@@ -110,3 +121,45 @@ textarea {
 footer {
 	background-color: #337ab7;
 }
+
+
+
+/* ------------------------------ */
+/* PERSONALIZAÇÃO DE LANDING PAGE */
+/* ------------------------------*/
+/* background de landing page do EBOOK */
+
+
+ .ldpage-ebook-wrap {
+ 	background-color: rgb(0, 142, 193);
+ }
+ .ldpage-ebook-wrap ol {
+ 	display: inline;
+ }
+ .img-description {
+ 	float: right;
+ 	width: 78vh;
+ 	margin: 10px 0;
+ }
+ .ldpage-ebook-wrap h1 {
+ 	font-size: 29px;
+ }
+
+.ldpage-ebook-wrap .description {
+	margin: 10px 25px;
+}
+
+footer.ldpage-ebook-wrap {
+	background-color: rgb(0, 142, 193);
+}
+
+
+ .text_white, .text_white h4, .text_white >h4, .text_white h1, h1.text_white, .text_white p, span.text_white {
+ 	color: #FFF;
+ }
+ .text_left {
+ 	text-align: left;
+ }
+ .font_light {
+ 	font-weight: 300;
+ }
