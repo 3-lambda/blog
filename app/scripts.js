@@ -40,9 +40,9 @@ function updateBtn() {
 }
 
 function updateSubscriptionOnServer(subscription) {
-  // var ref = firebase.database().ref('subscription')
+  var ref = firebase.database().ref('notification')
   if (subscription) {
-    // ref.push(JSON.stringify(subscription));
+    ref.push(JSON.stringify(subscription));
   }
 }
 
