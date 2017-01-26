@@ -1,8 +1,8 @@
 <section class="container" ng-repeat="post in posts">
   <article class="post-vertical">
-    <h1><a href="#/post/{{ posts.indexOf(post) }}">{{post.title}}</a></h1>
+    <h1><a href="#/post/{{ post.url }}">{{post.title}}</a></h1>
     <img src="../{{post.img}}" />
     {{post.exerpt}}
   </article>
-	<a href="#/post/{{ posts.indexOf(post) }}">Leia mais &rarr;</a>
+	<a href="#/post/{{ post.url }}">Leia mais &rarr;</a>
 </section>

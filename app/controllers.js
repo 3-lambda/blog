@@ -39,6 +39,6 @@ angular.module('app.controllers', [
 	})
 	.controller('SinglePostController', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams){
 		$http.get('posts/frontpage.json').success(function(data){
-		  $scope.template = '../posts/templates/' + data[$routeParams.id].template
+		  $scope.template = '../posts/templates/' + $routeParams.id + '.html'
 		});
 	}]);
