@@ -48,7 +48,7 @@
 							
 						<!-- Descrição #1 -->	
 						<div class="description">
-							<h4><i class="fa fa-check"></i> Lorem ipsum consectetur adipisicing dolor</h4>
+							<h4><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Lorem ipsum consectetur adipisicing dolor</h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
 							      labore et dolore magna aliqua ullamco laboris aliquipea commodo consequat. 
 							</p>
@@ -56,7 +56,7 @@
 						
 						<!-- Descrição #2 -->	
 						<div class="description">
-							<h4><i class="fa fa-check"></i> Lorem ipsum dolor amet, consectetur adipisicing</h4>
+							<h4><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Lorem ipsum dolor amet, consectetur adipisicing</h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
 							      labore et dolore magna aliqua ullamco laboris aliquipea commodo consequat. 
 							</p>
@@ -64,38 +64,47 @@
 						
 						<!-- Descrição #3 -->	
 						<div class="description">
-							<h4><i class="fa fa-check"></i> Lorem ipsum dolor, consectetur adipisicing</h4>
+							<h4><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Lorem ipsum dolor, consectetur adipisicing</h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
 							      labore et dolore magna aliqua ullamco laboris aliquipea commodo consequat. 
 							</p>
 						</div>
 						
 						<!-- Botão da sessão de texto -->	
-						<div class="">
-							<a class="btn btn-primary btn-lg" href="#">Baixe agora!</a>
+						<div>
+							<a id="description_btn" class="btn btn-primary btn-lg" href="#">Baixe agora!</a>
 						</div>
 													
 					</div>
 
 					<!-- Formulario -->
-					<div id="form-ldpage" class="col-sm-5 col-md-5 animated fadeInRight">
+					<div id="form-ldpage" class="col-sm-5 col-md-5">
 					
 						<!-- Register Form -->
+
+
 						<div class="form_register">
 							<h2> Register Now! </h2>
-							
+
+							<form>
+							  <div class="form-group">
+							    <label for="input-email"></label>
+							    <input type="email" class="form-control" id="input-email" aria-describedby="emailHelp" placeholder="Email">
+							   <!--<small id="emailHelp" class="form-text text-muted">Não compartilharemos seu e-mail com ninguém.</small>-->
+							    <label for="input-name"></label>
+							    <input type="text" class="form-control" id="input-name" placeholder="Nome">
+							  </div>
+							<!--
 							<form action="" class="row" method="post">
-								<!-- inserir nome -->
 								<div id="input_name" class="col-md-12">
 									<input id="name" class="form-control" type="text" name="first_name" placeholder="Nome"> 
 								</div>
-								<!-- inserir email-->
 								<div id="input_email" class="col-md-12">
 									<input id="email" class="form-control" type="text" name="email" placeholder="E-mail"> 
-								</div>
+								</div> -->
 								<!-- Botão enviar -->
-								<div id="form_register_btn" class="text-center">
-									<input class="btn btn-primary btn-lg" type="submit" value="Enviar" id="submit">
+								<div>
+									<input id="form_register_btn" class="btn btn-primary btn-lg" type="submit" value="Enviar" id="submit">
 								</div>  
 																
 							</form>	
