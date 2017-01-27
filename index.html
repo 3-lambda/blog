@@ -19,7 +19,7 @@
 	  ga('create', 'UA-90956705-1', 'auto');
 	  ga('send', 'pageview');
 	</script>
-		<div class="container blog-wrap">
+		<div class="blog-wrap">
 			<header>
 				<div class="navbar navbar-default navbar-fixed-top">
 					<div class="navbar-header">
@@ -34,16 +34,7 @@
 					</ul>
 			</header>
 
-			<div class="container">
-				<div class="row">
-					<div class="banner-static col-md-12 clearfix">
-					  <img src="img/banner-mercado.png" />
-					  <span class="banner-legend">
-					   Tenha sempre conteúdo com o nosso blog
-					  </span>
-					</div>
-				</div>
-			</div>
+
 
       <!-- Botão curtir do Facebook -->
 
@@ -55,44 +46,6 @@
 				js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8";
 				fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));</script>
-
-			<!-- Form de assinatura -->
-			<section class="container">
-			  <form role="form" class="formContainer  col-md-8 col-md-offset-2">
-			    <h4>Assine e receba antes nossos conteúdos</h4>
-			        <div class="form-group">
-			          <label class="label" for="nome"></label>
-			          <input placeholder="NOME" ng-model="form.nome" type="text" id="nome" class="form-control">
-			        </div>
-			        <div class="form-group">
-			          <label class="label" for="email"></label>
-			          <input put placeholder="EMAIL" class="form-control" ng-model="form.email" type="text" id="email">
-			        </div>
-			        <input class="form-control btn btn-lg btn-download js-push-btn" type="button" value="ASSINE" ng-click="showDiv=true; addLead(form)">
-							<div ng-show="showDiv">
-							  Obrigado por assinar!
-								Em breve receberá ótimos conteúdos
-							</div>
-			  </form>
-			</section>
-
-			 <section class="container">
-				<h4>Veja nossos conteúdos</h4>
-				<div class="row">
-					<div class="icons-lockup">
-						<div class="icons icon-oque-fazemos">
-						</div>
-						<div class="icons icon-ebook">
-						</div>
-						<div class="icons icon-infografico">
-						</div>
-						<div class="icons icon-whitepaper">
-						</div>
-						<div class="icons icon-webinar">
-						</div>
-					</div>
-				</div>
-			</section>
 
 		<!-- Post-vertical-inteiro na pagina -->
 			<div ng-view></div>

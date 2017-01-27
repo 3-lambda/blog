@@ -8,15 +8,12 @@ angular.module('app', [
 	}).when('/post/:id', {
 		templateUrl: 'views/singlepost.html',
 		controller: 'SinglePostController'
-	}).when('/leads', {
-		templateUrl: 'views/leads.html',
-		controller: 'LeadController'
 	}).when('/contato', {
 		templateUrl: 'views/contato.html',
-		controller: 'LeadController'
 	}).when('/quem-somos', {
 		templateUrl: 'views/quem-somos.html',
-		controller: 'LeadController'
+	}).when('/ebook', {
+		templateUrl: 'views/ebook.html',
 	}).otherwise({
 		redirectTo: '/'
 	});
