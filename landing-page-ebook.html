@@ -12,14 +12,14 @@
 
 		<div class="container">
 
-
+			<!--
 			<header>
 
 				<div class="navbar navbar-default">
 					<a class="navbar-brand logo">Me da um preco</a>
 					<!--<ul class="nav navbar-nav">
 						<li ng-repeat="page in pages"><a href="#/page/{{ pages.indexOf(page) }}">{{ page.title }}</a></li>
-					</ul>-->
+					</ul>
 
 					<nav class="site-nav">
 						<ul>
@@ -36,7 +36,35 @@
 
 
 			</header>
+		-->
+		<header class="navbar navbar-light navbar-toggleable-md bd-navbar">
 
+			<nav class="container">
+			    
+
+			    <div class="d-flex justify-content-between hidden-lg-up">
+			        <a href="#" class="navbar-brand logo">Me da um preco</a>
+			      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bd-main-nav" aria-controls="bd-main-nav" aria-expanded="false" aria-label="Toggle navigation">
+			        <span class="navbar-toggler-icon"></span>
+			      </button>
+			    </div>
+
+			    <div class="collapse navbar-collapse" id="bd-main-nav">
+			      <ul class="nav navbar-nav">
+			        <li class="nav-item active">
+			          <a class="nav-item nav-link " href="/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Home</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-item nav-link active" href="/getting-started/introduction/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Atacado</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-item nav-link " href="/examples/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">Varejo</a>
+			        </li>
+			      </ul>
+			    </div>
+			  </nav>
+
+		</header> 
 
 			<section class="ldpage ldpage-ebook-wrap">
 				<div class="row">
@@ -50,7 +78,7 @@
 						<!-- Descrição #1 -->
 						<div class="description text_white">
 							<h3 class="text_white font_light">Você Aprenderá</h3>
-							<img src="../img/ldpage/book.png" class="img-description" />
+							
 							<ol>
 								<li>De acodo com o objetivo da empresa</li>
 								<li>Baseado em custos</li>
@@ -58,6 +86,7 @@
 								<li>Giro & Margem</li>
 								<li>De acordo com a marca.</li>
 							</ol>
+							<img src="img/ldpage/book.png" class="img-description" />
 
 						</div>
 
