@@ -47,6 +47,8 @@
 				fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));</script>
 
+
+
 		<!-- Post-vertical-inteiro na pagina -->
 			<div ng-view></div>
 			<!-- Formatação do Post-pequeno com imagem ao lado esquerdo -->
@@ -75,7 +77,7 @@
 			          <label class="label" for="email"></label>
 			          <input put placeholder="EMAIL" class="form-control" ng-model="form.email" type="text" id="email">
 			        </div>
-			        <input class="form-control btn btn-lg btn-download" type="button" value="ASSINE" ng-click="showDiv2=true; addLead(form)">
+			        <input class="form-control btn btn-lg btn-download js-push-btn" type="button" value="ASSINE" ng-click="showDiv2=true; addLead(form)">
 							<div ng-show="showDiv2">
 								Obrigado por assinar!
 								Em breve receberá ótimos conteúdos

@@ -40,10 +40,9 @@ function updateBtn() {
 }
 
 function updateSubscriptionOnServer(subscription) {
-  var ref = firebase.database().ref('notification')
+  var ref = firebase.database().ref('subscription')
   if (subscription) {
     ref.push(subscription);
-  }
 }
 
 function subscribeUser() {
@@ -126,4 +125,7 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
   .catch(function(error) {
     console.error('Service Worker Error', error);
   });
-}
+} else {
+  console.warn('Push messaging is not supported');
+  pushButton.textContent = 'Push Not Supported';
+}}
