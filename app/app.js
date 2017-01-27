@@ -9,9 +9,9 @@ angular.module('app', [
 		templateUrl: 'views/singlepost.html',
 		controller: 'SinglePostController'
 	}).when('/contato', {
-		templateUrl: 'views/contato.html',
+		templateUrl: 'views/404.html',
 	}).when('/quem-somos', {
-		templateUrl: 'views/quem-somos.html',
+		templateUrl: 'views/404.html',
 	}).when('/ebook', {
 		templateUrl: 'views/ebook.html',
 	}).otherwise({

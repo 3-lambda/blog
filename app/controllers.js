@@ -17,7 +17,7 @@ angular.module('app.controllers', [
 			$scope.addLead = function(form){
 				var ref = firebase.database().ref('leads')
 
-				if ((validateEmail(form.email)) && (form.nome.length > 3) && !$scope.firedOnce){
+				if ((validateEmail(form.email)) && !$scope.firedOnce){
 					var d = new Date();
 					form.data = d.toLocaleString();
 					var request = new XMLHttpRequest();
