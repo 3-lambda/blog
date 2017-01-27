@@ -1,4 +1,3 @@
-<div class="container">
   <div class="row">
     <div class="banner-static col-md-12 clearfix">
       <img src="img/banner-mercado.png" />
@@ -7,7 +6,6 @@
       </span>
     </div>
   </div>
-</div>
 
 <!-- Form de assinatura -->
 <section class="container">
@@ -15,11 +13,11 @@
     <h4>Assine e receba antes nossos conteúdos</h4>
         <div class="form-group">
           <label class="label" for="nome"></label>
-          <input placeholder="NOME COMPLETO" ng-model="form.nome" type="text" id="nome" class="form-control">
+          <input placeholder="NOME COMPLETO" ng-model="form.nome" type="text" id="nome" class="form-control" required>
         </div>
         <div class="form-group">
           <label class="label" for="email"></label>
-          <input put placeholder="EMAIL" class="form-control" ng-model="form.email" type="text" id="email">
+          <input put placeholder="EMAIL" class="form-control" ng-model="form.email" type="text" id="email" required>
         </div>
         <input class="form-control btn btn-lg btn-download js-push-btn" type="button" value="ASSINE" ng-click="showDiv=true; addLead(form)">
         <div ng-show="showDiv">

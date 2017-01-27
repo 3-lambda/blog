@@ -7,26 +7,8 @@
 			<h1 class="ldpage-ebook text_white font_light text_left">Baixe agora o <br /> E-book GRATUITO.</h1>
 			<h2 class="text_white text_left"><strong class="text_white">6 Formas de precificação do seu negócio</strong></h2>
 
+			<img src="img/ldpage/book.png" class="img-description" />
 			<!-- Descrição #1 -->
-			<div class="description text_white">
-				<h3 class="text_white font_light">Você Aprenderá</h3>
-
-				<ol>
-					<li>De acodo com o objetivo da empresa</li>
-					<li>Baseado em custos</li>
-					<li>De acordo com o valor percebido</li>
-					<li>Giro & Margem</li>
-					<li>De acordo com a marca.</li>
-				</ol>
-				<img src="img/ldpage/book.png" class="img-description" />
-
-			</div>
-
-
-			<!-- Botão da sessão de texto -->
-			<div>
-				<a id="description_btn" class="btn btn-primary btn-lg" href="#">Baixe agora!</a>
-			</div>
 
 		</div>
 
@@ -40,12 +22,13 @@
 				<form method="get" action="files/6-formas-de-precificacao-no-seu-negocio.pdf">
 					<div class="form-group">
 						<label for="input-name"></label>
-						<input type="text" class="form-control" id="input-name" ng-model="form.nome" placeholder="Nome">
+						<input type="text" class="form-control" id="input-name" min=3 ng-model="form.nome" placeholder="Nome" required>
 
 						<label for="input-email"></label>
-						<input type="email" class="form-control" ng-model="form.email" id="input-email" aria-describedby="emailHelp" placeholder="Email">
+						<input type="email" class="form-control" ng-model="form.email" id="input-email" aria-describedby="emailHelp" placeholder="Email" required>
 					 <!--<small id="emailHelp" class="form-text text-muted">Não compartilharemos seu e-mail com ninguém.</small>-->
 					</div>
+
 				<!--
 				<form action="" class="row" method="post">
 					<div id="input_name" class="col-md-12">
@@ -64,6 +47,24 @@
 
 				</form>
 
+			</div>
+			<div class="description text_white">
+				<h3 class="text_white font_light">Você Aprenderá</h3>
+
+				<ul>
+					<li>De acodo com o objetivo da empresa</li>
+					<li>Baseado em custos</li>
+					<li>De acordo com o valor percebido</li>
+					<li>Giro & Margem</li>
+					<li>De acordo com a marca.</li>
+				</ul>
+
+			</div>
+
+
+			<!-- Botão da sessão de texto -->
+			<div>
+				<a id="description_btn" class="btn btn-primary btn-lg" href="#">Baixe agora!</a>
 			</div>
 		</div>
 		<!-- fim do formulario -->

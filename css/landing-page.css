@@ -15,16 +15,20 @@
 	font-size: 40px;
 	margin-bottom: 30px;
 	color: black;
+  text-align: center;
 }
+
 .ldpage h2 {
 	font-size: 30px;
 	margin-bottom: 30px;
 	color: black;
+  text-align: center;
 }
 
 
 .description {
 	margin-bottom: 20px;
+  float: right;
 }
 
 .description h4 {
@@ -57,7 +61,7 @@ span.glyphicon-ok {
 
 
 
-/* formulario */ 
+/* formulario */
 
 
 #form-ldpage {
@@ -72,6 +76,7 @@ span.glyphicon-ok {
 	-webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+    float: right;
 }
 
 .form_register > h2 {
@@ -85,8 +90,8 @@ span.glyphicon-ok {
 
 
 .form_register .form-control {
-	height: 46px;
-	margin-bottom: 20px;
+	height: 40px;
+	margin-bottom: 5px;
 	color: black
 }
 
@@ -107,13 +112,14 @@ textarea {
 /* botoes da landing page */
 
 #form_register_btn {
-	
+
 }
 
 #description_btn {
-	margin: 18px 38px;
+	margin: 50px 38px;
 	background-color: #e67e22;
 	border: 1px solid #e67e22;
+  justify-content: center;
 }
 
 
@@ -140,6 +146,7 @@ footer {
  	float: right;
  	width: 78vh;
  	margin: 10px 0;
+  width: 80%;
  }
  .ldpage-ebook-wrap h1 {
  	font-size: 29px;

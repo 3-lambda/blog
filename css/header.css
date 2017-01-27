@@ -1,9 +1,10 @@
 /* Código CSS do cabeçalho do blog */
 header {
-	height: 100px;
+	height: 50px;
 	position: relative; /*para ajustar a posição do elemento button*/
 	margin:	0 auto;
 	background-color: #FFF;
+	z-index: 1;
 }
 
 

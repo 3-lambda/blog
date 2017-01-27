@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/landing-page.css" />
 	</head>
 	<body ng-controller="LeadCtrl">
 
@@ -23,13 +24,11 @@
 			<header>
 				<div class="navbar navbar-default navbar-fixed-top">
 					<div class="navbar-header">
-						<a class="navbar-brand logo">Me da um preco</a>
+						<a href="#" class="navbar-brand logo">Me da um preco</a>
 					</div>
 					<ul class="nav navbar-nav site-nav">
 						<li class="active"><a href="#">Home</a></li>
-						<!-- <li><a href="#">Atacado</a></li>
-						<li><a href="#">Varejo</a></li> -->
-						<li><a href="#/Ebook">Ebook</a></li>
+						<li><a href="#/ebook">Ebook</a></li>
 						<li><a href="#/quem-somos">Quem somos</a></li>
 						<li><a href="#/contato">Contato</a></li>
 					</ul>
@@ -72,11 +71,11 @@
 			    <h4>Assine e receba antes nossos conteúdos</h4>
 			        <div class="form-group">
 			          <label class="label" for="nome"></label>
-			          <input placeholder="NOME COMPLETO" ng-model="form.nome" type="text" id="nome" class="form-control">
+			          <input placeholder="NOME COMPLETO" ng-model="form.nome" type="text" id="nome" class="form-control" required>
 			        </div>
 			        <div class="form-group">
 			          <label class="label" for="email"></label>
-			          <input put placeholder="EMAIL" class="form-control" ng-model="form.email" type="text" id="email">
+			          <input put placeholder="EMAIL" class="form-control" ng-model="form.email" type="text" id="email" required>
 			        </div>
 			        <input class="form-control btn btn-lg btn-download js-push-btn" type="button" value="ASSINE" ng-click="showDiv2=true; addLead(form)">
 							<div ng-show="showDiv2">
